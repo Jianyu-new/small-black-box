@@ -5,11 +5,11 @@
     <form bindsubmit="onSubmit">
       <view class="input-group">
         <text class="input-label">用户名</text>
-        <input name="username" type="text" placeholder="请输入用户名" />
+        <input model:value="{{username}}" type="text" placeholder="请输入用户名"/>
       </view>
       <view class="input-group">
         <text class="input-label">密码</text>
-        <input name="password" type="password" placeholder="请输入密码" />
+        <input model:value="{{password}}" type="password" placeholder="请输入密码"/>
       </view>
       <button formType="submit" class="submit-btn">登录</button>
     </form>

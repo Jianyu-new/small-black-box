@@ -1,0 +1,5 @@
+<!--components/rectchoice/rectChoice.wxml-->
+<view class="container">
+  <image class="background" src="{{backgroundSrc}}" mode="aspectFit"></image>
+  <text class="text">{{rectName}}</text>
+</view>

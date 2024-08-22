@@ -1,27 +1,15 @@
-<!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-        </button>
-        <view class="nickname-wrapper">
-          <text class="nickname-label">昵称</text>
-          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
-        </view>
-      </block>
-      <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
-      </block>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
-    </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
-    </view>
+<!-- <view class="myLayout"> -->
+<rect-choice rectName="天气" backgroundSrc="https://www.testmu.cn/img/tq.jpg"></rect-choice>
+<rect-choice rectName="欢迎语" backgroundSrc="https://www.testmu.cn/img/welcome.jpg"></rect-choice>
+<rect-choice rectName="微博热搜" backgroundSrc="https://www.testmu.cn/img/wb.jpg"></rect-choice>
+<rect-choice rectName="古时今日" backgroundSrc="https://www.testmu.cn/img/gu.jpg"></rect-choice>
+
+<view class="input-container">
+  <view class="input-group">
+    <input class="input-box" type="text" name="inputWeather" placeholder="查询所在城市天气"/>
+    <input class="input-box" type="text" name="inputEmail" placeholder="收件人邮箱"/>
   </view>
-</scroll-view>
+</view>
+
+<button type="button">发送</button>
+<!-- </view> -->

@@ -1,4 +1,8 @@
 {
   "usingComponents": {
-  }
+    "rect-choice": "/components/rectchoice/rectChoice"
+  } ,
+  "navigationBarTitleText": "主页",
+  "backgroundColor": "#FBBFFA",
+  "navigationBarBackgroundColor": "#FBBFFA"
 }
